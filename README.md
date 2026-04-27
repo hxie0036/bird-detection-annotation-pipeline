@@ -68,7 +68,7 @@ The system integrates three main components:
 
 ## Demo
 
-A short demonstration video is included in the application materials.
+Watch demo: https://drive.google.com/file/d/1HzIcOusc9L2VfTzYGBJyahfCE15Vqog9/view?usp=sharing
 
 ---
 
