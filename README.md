@@ -1,7 +1,8 @@
-A practical system for reducing manual annotation effort through automated detection and labeling.
 # Bird Detection and Automated Annotation System
 
-This project presents an end-to-end computer vision pipeline for bird detection, automated annotation, and species classification. The system is designed to reduce manual labeling effort and support efficient dataset construction.
+An end-to-end computer vision pipeline for bird detection, automated annotation, and species classification.
+
+This system reduces manual annotation effort by integrating detection, labeling, and classification into a unified workflow.
 
 ---
 
@@ -13,9 +14,7 @@ The system integrates three main components:
 - **Annotation**: Automatically generates Pascal VOC XML labels from detection results  
 - **Classification**: Uses a ResNet50-based model trained on a custom dataset (~50 bird species)  
 
-Pipeline:
-
-Detection → Annotation → Classification
+**Pipeline:** Detection → Annotation → Classification
 
 ---
 
@@ -53,15 +52,17 @@ Detection → Annotation → Classification
     ├── annotation.py      # YOLO-based detection and XML generation
     ├── classifier.py      # ResNet50-based image classification
     ├── gui.py             # GUI for annotation tool
-    ├── class_names.json   # Class label mapping
-
+    ├── class_names.json   # internal label mapping used by the classifier
+    ├── cat_to_name.json   # human-readable labels for UI display
+    
 ---
 
 ## Notes
 
 - Detection uses pre-trained YOLO models for efficiency  
 - Classification model was trained on a curated dataset (~50 species)  
-- The system focuses on practical pipeline integration rather than model training from scratch  
+- The system focuses on practical pipeline integration rather than model training from scratch
+- Model checkpoint is not included due to size constraints, but can be provided upon request.
 
 ---
 
